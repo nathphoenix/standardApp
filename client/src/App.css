@@ -35,3 +35,39 @@
   height: 500px;
   object-fit: cover;
 }
+
+/* .bg {  */
+  /* The image used */
+  /* background-image: url("../src/image/five.jpeg"); */
+
+  /* Full height */
+  /* height: 50%;  */
+
+  /* Center and scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.remove-btn{
+  margin-right: 10px;
+}
+
+.fade-enter{
+  opacity: 0.5;
+}
+
+.fade-enter-active{
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+
+}
+
+.fade-exit{
+  opacity: 1;
+}
+
+.fade-exit-active{
+   opacity: 0.01;
+   transition: opacity 1000ms ease-in;
+}

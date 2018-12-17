@@ -20,7 +20,19 @@ export default function(state=initialState, action){
       case  GET_ITEMS:                                  //what we want to check for
          return{
          ...state     //... is called the spread operator which will fetch the above items array
-    }
+    };
+
+    case DELETE_ITEM:
+    return{
+        ...state,
+        items : state.items.filter(item => item.id !== action.payload )
+    };
+    case ADD_ITEMS:
+    return{
+        ...state,
+        items : [action.payload, ...state.items]
+    };
+
     default :
     return state;
     }

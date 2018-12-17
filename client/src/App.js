@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import AppBack from './components/AppBack';
 import ShoppingList from './components/ShoppingList';
+import ItemModal from './components/ItemModal';
 import {Provider} from 'react-redux'; //in order to integrate the store with the app we need provides which
                                         //is the package that connect react app to the redux clientside
       
@@ -14,6 +15,8 @@ import {Provider} from 'react-redux'; //in order to integrate the store with the
                        // the provider that takes in the proprty of store
 
 import store from './store';
+import {Container} from 'reactstrap';
+// import ItemModal from './components/ItemModal';
 
 class App extends Component {
   render() {
@@ -24,8 +27,10 @@ class App extends Component {
         <AppSlider />
         <AppCard />
         <AppBack />
+        <Container>
+        <ItemModal />
         <ShoppingList />
-        
+        </Container>
       </div>
       </Provider>
     );

@@ -3,7 +3,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { Col, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import {connect} from 'react-redux';
 import {addItem} from '../actions/itemActions';
-import uuid from 'uuid';
+// import uuid from 'uuid';
 
 class ItemModal extends React.Component {
   constructor(props) {
@@ -30,7 +30,7 @@ class ItemModal extends React.Component {
       e.preventDefault();
 
       const newItem = {
-            id: uuid(),
+            // id: uuid(),  not needed again as we are fetching from the database
             name: this.state.name
       };
 

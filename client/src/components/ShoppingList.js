@@ -47,17 +47,18 @@ componentDidMount(){
                     Add Item
                 </Button> */}
 
+                    
                     <ListGroup>
                         <TransitionGroup>
-                            {items.map(({id, name}) => (
-                                <CSSTransition key={id} timeout={500} classNames="fade">
+                            {items.map(({_id, name}) => (             //we change the id in delete button to _id because of mongodb, that is how it is use
+                                <CSSTransition key={_id} timeout={500} classNames="fade">  
                                 <ListGroupItem>
                                     <Button
                                     className="remove-btn"
                                     color="danger"
                                     size="sm"
                                    
-                                   onClick = {this.onDeleteClick.bind(this, id)}
+                                   onClick = {this.onDeleteClick.bind(this, _id)}
                                    
                                     // onClick={() => {
                                     //     this.setState(state => ({

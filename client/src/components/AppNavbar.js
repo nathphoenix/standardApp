@@ -10,7 +10,7 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  DropdownItem, } from 'reactstrap';
 
 export default class AppNavbar extends React.Component {
   constructor(props) {
@@ -25,10 +25,15 @@ export default class AppNavbar extends React.Component {
     this.setState({
       isOpen: !this.state.isOpen
     });
+
   }
+  
   render() {
     return (
+      
       <div>
+        <div id="sticker" className="header-area stick">
+         
         <Navbar color="dark" dark expand="md">
           <NavbarBrand href="/">PhoenixApp</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -69,6 +74,7 @@ export default class AppNavbar extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
+      </div>
       </div>
     );
   }

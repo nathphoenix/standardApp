@@ -49,6 +49,9 @@
   background-size: cover;
 } */
 
+.App{
+  font-family: 'Open Sans', sans-serif;
+}
 .remove-btn{
   margin-right: 10px;
 }
@@ -70,4 +73,38 @@
 .fade-exit-active{
    opacity: 0.01;
    transition: opacity 1000ms ease-in;
+}
+
+.teams{
+  margin-top: 40px;
+}
+.text h3 {
+  text-align: center;
+  color: red;
+  font-family:  sans-serif;
+  margin-top: 4rem;
+  
+}
+
+@media (max-width: 767px){
+.header-area {
+    height: 60px !important;
+    background: #000;
+}
+}
+
+
+
+.header-area.stick {
+  background-color: rgba(0, 0, 0, 1);
+  height: 55px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.stick .navbar-header a.navbar-brand {
+  display: inline-block;
+  height: 90px;
 }
